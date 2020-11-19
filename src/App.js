@@ -1,12 +1,13 @@
-import { Fragment } from 'react';
-import { Footer } from './components';
+import { Header, Footer } from './components';
 import "./App.css";
 
 function App() {
 	return (
-		<Fragment>
+		<>
+			<Header />
+			<br/>
 			<Footer />
-		</Fragment>
+		</>
 	)
 }
 
