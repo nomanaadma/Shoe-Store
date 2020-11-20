@@ -13,20 +13,18 @@
 .menu {
 	color: inherit;
 	text-decoration: none;
-	padding-left: 12px;
-	padding-right: 12px;
+	margin-left: 15px;
 }
 
 .menu button {
+	padding-left: 12px;
+	padding-right: 12px;
+	border-radius: 32px;
+	padding-top: 4px;
+    padding-bottom: 3px;
 	font-size: 0.8rem;
 }
 
-:global(.active-nav) {
-	background-color: #e91b20 !important;
-    border-radius: 32px;
-}
-
 :global(.active-nav) button {
-	padding-top: 4px;
-    padding-bottom: 3px;
+	background-color: #b32727 !important;
 }
