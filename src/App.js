@@ -12,6 +12,7 @@ function App() {
 					<Route path="/" exact component={Home} />
 					<Redirect from="/home" exact to="/" />
 					<Route path="/product/:id" component={ProductDetails} />
+					<Route path="/products/:page" component={Product} />
 					<Route path="/products" component={Product} />
 					<Route path="/about" component={About} />
 					<Route path="/contact" component={Contact} />

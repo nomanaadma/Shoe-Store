@@ -6,18 +6,32 @@ import {
 	CardMedia,
 	Typography,
 } from "@material-ui/core";
-import Rating from "@material-ui/lab/Rating";
+import { Pagination, Rating } from '@material-ui/lab';
 import shoesDetails from "../../data/ShoesDetails";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import classes from "./Product.module.css";
-import { Link } from "react-router-dom";
+import { Link, useParams, Redirect } from "react-router-dom";
+import { paginate } from "../../utils/paginate";
 
-function Products() {
+function Products({ history }) {
+
 	const images = require.context("../../", true);
+	let { page } = useParams();
+	page = parseInt(page || '1');
+
+	const pageSize = 6;
+	let currentShoes = paginate(shoesDetails, page, pageSize);
+	const pageCount = Math.ceil(shoesDetails.length / pageSize);
+
+	const paginationHandleChange = (event, value) => {
+		window.scroll({top: 0, left: 0, behavior: 'smooth' });
+		history.push('/products/'+value);
+    };
 
 	return (
+		<>
 		<Grid container spacing={2}>
-			{shoesDetails.map((shoe, index) => {
+			{currentShoes.map((shoe, index) => {
 				return (
 					<Grid
 						item
@@ -75,6 +89,8 @@ function Products() {
 				);
 			})}
 		</Grid>
+		{ pageCount > 1 && <Pagination count={pageCount} onChange={paginationHandleChange} variant="outlined" page={page} color="secondary" className={classes.pagination} />}
+		</>
 	);
 }
 
