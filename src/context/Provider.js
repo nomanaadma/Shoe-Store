@@ -1,7 +1,5 @@
 import React, { createContext, useReducer } from "react";
 import Reducer from "./Reducer";
-import {  ThemeProvider } from '@material-ui/core';
-import theme from '../theme';
 
 const initialState = {
 	shoes: []
@@ -16,9 +14,7 @@ export const Provider = ({ children, className }) => {
 		<Context.Provider
 			value={{ state }}
 		>
-			<ThemeProvider theme={theme}>
-				<div className={className}>{children}</div>
-			</ThemeProvider>
+			<div className={className}>{children}</div>
 		</Context.Provider>
 	);
 };
