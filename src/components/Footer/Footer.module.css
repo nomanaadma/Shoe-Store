@@ -1,6 +1,6 @@
 .container {
 	background-color: #282c2f;
-	padding: 30px 0;
+	padding: 40px 0;
 }
 
 .container p {
@@ -8,6 +8,7 @@
 	text-align: center;
 	color: #979696;
 	margin-top: 0;
+	margin-bottom: 25px;
 }
 
 .container ul {
