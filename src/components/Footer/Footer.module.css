@@ -1,11 +1,11 @@
 .container {
 	background-color: #282c2f;
 	padding: 40px 0;
+	text-align: center;
 }
 
 .container p {
 	font-family: Roboto;
-	text-align: center;
 	color: #979696;
 	margin-top: 0;
 	margin-bottom: 25px;
