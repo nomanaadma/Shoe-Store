@@ -1,7 +1,7 @@
 .paperCarouselHeight {
-	min-height: 580px;
 	height: 100%;
 	box-shadow: none !important;
+	display: flex;
 }
 
 .productheading {

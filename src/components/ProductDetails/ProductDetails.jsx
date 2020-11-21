@@ -7,6 +7,8 @@ import Carousel from 'react-material-ui-carousel';
 
 function ProductDetails() {
 
+	colors.sort(() => Math.random() - 0.5);
+
 	const { id } = useParams();
 	const productDetail = shoesDetails.find(x => x.id === Number(id));
 	const images = require.context("../../", true);
