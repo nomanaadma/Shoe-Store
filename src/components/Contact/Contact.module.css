@@ -1,0 +1,23 @@
+.root {
+	min-width: 275px;
+	width: 450px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.heading {
+	text-align: center;
+}
+
+.field {
+	width: 100%;
+	margin-bottom: 20px !important;
+}
+
+.textarea {
+	margin-top: 25px !important;	
+}
+
+.button {
+	background-image: linear-gradient(to right, rgb(244, 92, 67) 0%, #b32727 100%);
+}
