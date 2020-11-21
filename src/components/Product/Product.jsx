@@ -10,7 +10,7 @@ import { Pagination, Rating } from '@material-ui/lab';
 import shoesDetails from "../../data/ShoesDetails";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import classes from "./Product.module.css";
-import { Link, useParams, Redirect } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { paginate } from "../../utils/paginate";
 
 function Products({ history }) {
@@ -47,6 +47,7 @@ function Products({ history }) {
 							defaultValue={shoe.rating}
 							precision={0.1}
 							emptyIcon={<StarBorderIcon fontSize="inherit" />}
+							readOnly
 						/>
 						<span className={classes.priceTag}>${shoe.price}</span>
 						<Link

@@ -20,7 +20,6 @@
 }
 
 .rating {
-	pointer-events: none;
 	position: absolute !important;
     top: 15px;
     z-index: 2;

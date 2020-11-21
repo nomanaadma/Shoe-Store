@@ -1,0 +1,23 @@
+.paperCarouselHeight {
+	min-height: 580px;
+	height: 100%;
+	box-shadow: none !important;
+}
+
+.productheading {
+	border-left: 8px solid #b32727;
+    padding-left: 1rem;
+}
+
+.chip {
+	margin-right: 6px;
+	margin-bottom: 20px;
+}
+
+.sectionHeading {
+	font-weight: bold !important;
+}
+
+.benefits {
+	padding-left: 20px;
+}

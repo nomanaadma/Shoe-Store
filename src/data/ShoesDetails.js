@@ -1,5 +1,3 @@
-
-
 const ShoesDetails = [
     {
         id: 1,
@@ -21,7 +19,7 @@ const ShoesDetails = [
     },
     {
         id: 2,
-        name: "NikeCourt Vintage Premium",        
+        name: "Nike Court Vintage Premium",        
         price: 105,
         sizes: [4,5,6,7,8,9,10],
         images: [
@@ -356,6 +354,20 @@ const ShoesDetails = [
         desc: "With design elements inspired by the Air Jordan 4, the Jordan Max 200 brings a new level of Air to Jordan, for details anchored in legacy and comfort made for the future.",
         reviewsCount: 16    
     }
+];
+
+export const benefits = [
+	'The foam midsole and rubber outsole provide durable cushioning and traction while flex grooves let you move naturally.',
+	'Air cushioning in the heel is combined with soft, flexible foam underfoot for a comfortable experience that lasts.',
+	'Rubber faux-Waffle sole with large flex grooves mixes heritage style with modern aesthetic and adds traction and durability.'
+];
+
+export const colors = [
+	'black',
+	'orange', 
+	'blue', 
+	'red', 
+	'green', 
 ];
 
 export default ShoesDetails
