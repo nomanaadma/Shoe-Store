@@ -27,3 +27,10 @@
 .seeCollection button {
 	width: 200px;
 }
+
+@media only screen and (max-width: 600px) {
+	.trendingHeading {
+		font-size: 30px !important;
+		margin: 20px 0 !important;
+	}
+}

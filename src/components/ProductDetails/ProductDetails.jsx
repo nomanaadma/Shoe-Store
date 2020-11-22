@@ -16,8 +16,8 @@ function ProductDetails() {
     return (
         <div>
             <Grid container spacing={3}>
-                <Grid item xs={12} sm={4}>
-                    <Carousel autoPlay={true} animation={'slide'} interval={100000}>
+                <Grid item sm={12} md={4}>
+                    <Carousel autoPlay={true} animation={'slide'} interval={3000}>
                         {
                             productDetail.images.map((item, index) => {
                                 return (
@@ -29,7 +29,7 @@ function ProductDetails() {
                         }
                     </Carousel>
                 </Grid>
-                <Grid item xs={12} sm={8}>
+                <Grid item sm={12} md={8}>
 		
 					<Typography variant="h3" className={classes.productheading} gutterBottom>{productDetail.name}</Typography>
 					<Typography variant="h6" gutterBottom>Price: ${productDetail.price}</Typography>

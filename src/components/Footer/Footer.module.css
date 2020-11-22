@@ -7,8 +7,7 @@
 .container p {
 	font-family: Roboto;
 	color: #979696;
-	margin-top: 0;
-	margin-bottom: 25px;
+	margin: 0 10px 25px
 }
 
 .container ul {

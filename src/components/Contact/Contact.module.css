@@ -21,3 +21,10 @@
 .button {
 	background-image: linear-gradient(to right, rgb(244, 92, 67) 0%, #b32727 100%);
 }
+
+@media only screen and (max-width: 600px) {
+	.root {
+		min-width: 275px;
+		width: 90%;
+	}	
+}

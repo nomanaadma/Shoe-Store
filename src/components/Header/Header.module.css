@@ -17,12 +17,12 @@
 }
 
 .menu button {
-	padding-left: 12px;
+	/* padding-left: 12px;
 	padding-right: 12px;
 	border-radius: 32px;
 	padding-top: 4px;
     padding-bottom: 3px;
-	font-size: 0.8rem;
+	font-size: 0.8rem; */
 }
 
 :global(.active-nav) button {
