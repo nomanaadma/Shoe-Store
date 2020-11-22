@@ -1,0 +1,29 @@
+.banner {
+	width: 100%;
+}
+
+.trendingHeading {
+	text-align: center;
+	margin: 40px 0 !important;
+}
+
+.card h2 {
+	text-align: center;
+}
+
+.card a > div {
+	background: transparent;
+	box-shadow: none !important;
+}
+
+.seeCollection {
+	display: block;
+    text-align: center;
+    margin-top: 23px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.seeCollection button {
+	width: 200px;
+}

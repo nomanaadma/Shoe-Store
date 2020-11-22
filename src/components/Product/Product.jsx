@@ -16,7 +16,6 @@ function Products({ history }) {
 	const pageCount = Math.ceil(shoesDetails.length / pageSize);
 
 	const paginationHandleChange = (event, value) => {
-		window.scroll({top: 0, left: 0, behavior: 'smooth' });
 		history.push('/products/'+value);
     };
 

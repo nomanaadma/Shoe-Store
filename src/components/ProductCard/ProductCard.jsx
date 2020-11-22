@@ -11,7 +11,7 @@ import { Rating } from '@material-ui/lab';
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import { Link } from "react-router-dom";
 
-function ProductCard({ shoe }) {
+function ProductCard({ shoe, minimal, className }) {
 
 	const images = require.context("../../", true);
 
@@ -21,17 +21,21 @@ function ProductCard({ shoe }) {
 			xs={12}
 			sm={6}
 			md={4}
-			className={classes.gridParentForRating}
+			className={classes.gridParentForRating+' '+className}
 		>
-			<Rating
-				className={classes.rating}
-				name="customized-empty"
-				defaultValue={shoe.rating}
-				precision={0.1}
-				emptyIcon={<StarBorderIcon fontSize="inherit" />}
-				readOnly
-			/>
-			<span className={classes.priceTag}>${shoe.price}</span>
+			{ minimal !== true &&
+				<div>
+					<Rating
+						className={classes.rating}
+						name="customized-empty"
+						defaultValue={shoe.rating}
+						precision={0.1}
+						emptyIcon={<StarBorderIcon fontSize="inherit" />}
+						readOnly
+					/>
+					<span className={classes.priceTag}>${shoe.price}</span>
+				</div>
+			}
 			<Link
 				to={`/product/${shoe.id}`}
 				className={classes.gridLink}
@@ -56,15 +60,20 @@ function ProductCard({ shoe }) {
 							>
 								{shoe.name}
 							</Typography>
-							<Typography
-								variant="body2"
-								color="textSecondary"
-								component="p"
-								className={classes.homecarddesc}
-							>
-								{shoe.desc}
-							</Typography>
+							{ minimal !== true &&
+								<Typography
+									variant="body2"
+									color="textSecondary"
+									component="p"
+									className={classes.homecarddesc}
+								>
+									{shoe.desc}
+								</Typography>
+							}
 						</CardContent>
+						<div className={classes.shopNow}>
+							<span>{ minimal === true ? 'Shop Now' : 'See Details' }</span>
+						</div>
 					</CardActionArea>
 				</Card>
 			</Link>
