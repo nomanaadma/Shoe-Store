@@ -17,14 +17,61 @@
 }
 
 .menu button {
-	/* padding-left: 12px;
+	padding-left: 12px;
 	padding-right: 12px;
 	border-radius: 32px;
 	padding-top: 4px;
     padding-bottom: 3px;
-	font-size: 0.8rem; */
+	font-size: 0.8rem;
 }
 
 :global(.active-nav) button {
 	background-color: #b32727 !important;
+}
+
+.menuButton {
+	margin-right: 10px;
+	display: none !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+.drawer {
+	width: 275px;
+	flex-shrink: 0;
+	display: none;
+}
+
+.drawerPaper {
+	width: 275px;
+}
+
+.drawerPaper a {
+	margin-left: 0;
+}
+
+.drawerPaper :global(.active-nav) > div {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.drawerHeader {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+	.drawer, .menuButton {
+		display: block !important;
+	}
+
+	.navitems {
+		display: none;
+	}
+
+	.logo {
+		text-align: center;
+	}
 }

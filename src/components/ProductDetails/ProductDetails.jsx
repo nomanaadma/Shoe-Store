@@ -17,7 +17,7 @@ function ProductDetails() {
         <div>
             <Grid container spacing={3}>
                 <Grid item sm={12} md={4}>
-                    <Carousel autoPlay={true} animation={'slide'} interval={3000}>
+                    <Carousel autoPlay={true} animation={'slide'} interval={5000}>
                         {
                             productDetail.images.map((item, index) => {
                                 return (
