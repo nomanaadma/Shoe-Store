@@ -4,10 +4,15 @@ import { faFacebookF, faLinkedinIn, faGithub } from "@fortawesome/free-brands-sv
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import Tooltip from '@material-ui/core/Tooltip';
+import { useLocation } from 'react-router-dom';
 
 function Footer() {
+
+	const location = useLocation();
+	const pathname = location.pathname.replace('/', '');
+
 	return (
-		<div className={styles.container}>
+		<div className={styles.container+' '+pathname}>
 			<p>
 				Made with <FontAwesomeIcon className={styles.heart} icon={faHeart} /> by Noman Shoukat | Copyright &copy; { new Date().getFullYear() } All Rights Reserved.
 			</p>

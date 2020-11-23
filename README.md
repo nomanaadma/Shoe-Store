@@ -2,11 +2,14 @@
 
 Project #3 for [Panacloud Bootcamp 2020](https://panacloud.github.io/bootcamp-2020/). Shoe Store App built with React and React Router.
 
-Built with:
+## Built with:
 
 - [React](https://github.com/facebook/react/)
 - [React-Router-Dom](https://reactrouter.com/web/guides/quick-start)
 - [Material-UI](https://material-ui.com/)
+
+## Screenshots
+See the screenshots folder.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

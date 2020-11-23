@@ -1,10 +1,10 @@
-import { Grid } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import { Pagination } from '@material-ui/lab';
 import shoesDetails from "../../data/ShoesDetails";
 import classes from "./Product.module.css";
 import { useParams } from "react-router-dom";
 import { paginate } from "../../utils/paginate";
-import ProductCard from '../ProductCard/ProductCard'
+import ProductCard from '../ProductCard/ProductCard';
 
 function Products({ history }) {
 
@@ -19,6 +19,17 @@ function Products({ history }) {
 		history.push('/products/'+value);
     };
 
+	if(currentShoes.length === 0) {
+		return (
+			<Typography
+				variant="h4"
+				style={{ textAlign: 'center' }}
+			>
+				No Products
+			</Typography>
+		)
+	}
+	
 	return (
 		<>
 		<Grid container spacing={2}>

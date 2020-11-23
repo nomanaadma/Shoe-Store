@@ -1,0 +1,19 @@
+.container {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 24rem;
+}
+
+.container img {
+	margin-bottom: 30px;
+	width: 70%;
+}
+
+:global(.not-found) {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
